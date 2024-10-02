@@ -1,0 +1,154 @@
+:root {
+  font-family: sans-serif
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(234, 221, 202, 0), rgba(234, 221, 202, 0.8));
+  margin: 0;
+  display: flex;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 500px;
+  margin: 0px;
+}
+
+.image-container {
+  height: 100vh;
+  width: 500px;
+  position: relative;
+  /* box-shadow: 5px 0px 3px rgba(0, 0, 0, 0.5); */
+}
+
+.bg-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-name {
+  font-family: cursive;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 3rem;
+  /* height: 120px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 150px;
+}
+
+.origami-logo {
+  height: 70px;
+  cursor: pointer;
+}
+
+.image-author {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+a:link {
+  color: white;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section div {
+  flex: 1;
+}
+
+.signup-text {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-layout {
+  background-color: rgb(242, 231, 216);
+  height: 210px;
+  padding: 10px 30px 30px 30px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-layout p {
+  margin-bottom: 5px;
+}
+
+.col-container {
+  display: flex;
+  /* background-color: lightblue; */
+  width: 500px;
+}
+
+.first-col, .second-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+label {
+  font-size: 12px;
+}
+
+input {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 25px;
+  width: 190px;
+  padding-left: 5px;
+  outline: none;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+input:invalid:focus {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+
+button {
+  margin: 20px 0px 0px 30px;
+  background-color: rgb(233, 116, 81);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 0.5;
+}
+
+.login-text {
+  margin: 10px 0px 0px 30px;
+}
+
+.login {
+  color: rgb(233, 116, 81);
+  cursor: pointer;
+}
+.login:hover {
+  text-decoration: underline;
+}
